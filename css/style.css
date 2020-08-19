@@ -77,7 +77,7 @@ h6,
 figure {
   color: #000;
   /*font-family: "Work Sans", Arial, sans-serif;*/
-  font-family: "Montez", cursive;
+  font-family: "Rouge Script", cursive;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -114,11 +114,18 @@ figure {
 }
 
 .fh5co-nav #fh5co-logo {
-  font-size: 40px;
+  /*font-size: 40px;*/
   margin: 0;
   padding: 0;
-  line-height: 40px;
+  /*line-height: 40px;*/
   font-family: "Open Sans", Arial, serif;
+}
+
+.fh5co-nav #fh5co-logo img {
+  width: 4em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1);
 }
 
 .fh5co-nav a {
@@ -150,7 +157,7 @@ figure {
   font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 215, 0, 1);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -159,7 +166,7 @@ figure {
 .fh5co-nav ul li a:hover,
 .fh5co-nav ul li a:focus,
 .fh5co-nav ul li a:active {
-  color: white;
+  color: blue;
 }
 
 .fh5co-nav ul li.has-dropdown {
@@ -527,7 +534,7 @@ figure {
 
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 0;
   position: relative;
 }
 
@@ -644,18 +651,21 @@ figure {
   }
 }
 
-.timeline>li.timeline-inverted>.timeline-panel {
+.timeline>li.timeline-inverted>.timeline-panel,
+.timeline>li>.timeline-panel.inverted {
   float: right;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:before {
+.timeline>li.timeline-inverted>.timeline-panel:before,
+.timeline>li>.timeline-panel.inverted:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:after {
+.timeline>li.timeline-inverted>.timeline-panel:after,
+.timeline>li>.timeline-panel.inverted:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
@@ -887,16 +897,16 @@ figure {
 }
 
 .fh5co-contact-info ul li {
-  padding: 0 0 0 50px;
-  margin: 0 0 30px 0;
+  padding: 0 0 0 10px;
+  margin: 0 0 15px 0;
   list-style: none;
   position: relative;
 }
 
 .fh5co-contact-info ul li:before {
   color: #F14E95;
-  position: absolute;
-  left: 0;
+  position: relative;
+  right: 1em;
   top: .05em;
   font-family: 'icomoon';
   speak: none;
@@ -958,7 +968,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Cookie", cursive, Arial, sans-serif;
+  font-family: "Rouge Script", cursive, Arial, sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -989,7 +999,7 @@ form label {
 #fh5co-header .display-tc h2 {
   font-size: 30px;
   margin: 10px 0px;
-  font-family: 'Cookie', Arial, sans-serif;
+  font-family: 'Alegreya', Arial, sans-serif;
 }
 
 #fh5co-header .display-tc h2 span {
@@ -1135,6 +1145,31 @@ form label {
   /* words */
 }
 
+@media screen and (max-width: 768px) {
+
+  .simply-countdown>.simply-section {
+    /* coutndown blocks */
+    width: 60px;
+    height: 60px;
+  }
+
+  .simply-countdown>.simply-section>div {
+    /* countdown block inner div */
+    height: 60px;
+    width: 60px;
+  }
+
+  .simply-countdown>.simply-section .simply-amount {
+    font-size: 20px;
+    /* amounts */
+  }
+
+  .simply-countdown>.simply-section .simply-word {
+    font-size: 10px;
+    /* words */
+  }
+}
+
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
@@ -1217,7 +1252,7 @@ form label {
 }
 
 .couple-half h3 {
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Alegreya", Arial, serif;
   color: #F14E95;
   font-size: 30px;
 }
@@ -1229,14 +1264,14 @@ form label {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
 }
 
 .couple-half .groom img,
 .couple-half .bride img {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1360,20 +1395,40 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Rouge Script", cursive;
+}
+
+.fh5co-heading h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #F14E95;
+  font-family: "Rouge Script", cursive;
+}
+
+.fh5co-heading p {
+  font-size: 25px;
+  font-family: "Alegreya", cursive;
+  line-height: 1.5;
+  color: #828282;
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
     font-size: 40px;
   }
+
+  .fh5co-heading h3 {
+    font-size: 25px;
+  }
+
+  .fh5co-heading p {
+    font-size: 20px;
+  }
 }
 
-.fh5co-heading p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #828282;
-}
+
 
 .fh5co-heading span {
   text-transform: uppercase;
