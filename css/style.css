@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
+  color: #707070;
   background: #fff;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: #505050;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -166,7 +166,7 @@ figure {
 .fh5co-nav ul li a:hover,
 .fh5co-nav ul li a:focus,
 .fh5co-nav ul li a:active {
-  color: blue;
+  color: #F14E95;
 }
 
 .fh5co-nav ul li.has-dropdown {
@@ -417,7 +417,7 @@ figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
+  /*height: 850px;*/
   float: left;
 }
 
@@ -425,7 +425,7 @@ figure {
 #fh5co-counter .display-tc,
 #fh5co-event .display-t,
 #fh5co-event .display-tc {
-  height: 700px;
+  /*height: 700px;*/
   display: table;
   width: 100%;
 }
@@ -493,6 +493,7 @@ figure {
 
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
+  font-family: "Alegreya", Arial, serif;
   font-size: 20px;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -516,11 +517,19 @@ figure {
   font-size: 20px;
 }
 
-#fh5co-counter .event-wrap .event-col,
-#fh5co-event .event-wrap .event-col {
+#fh5co-counter .event-wrap .event-row,
+#fh5co-event .event-wrap .event-row {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#fh5co-counter .event-wrap .event-row .event-col,
+#fh5co-event .event-wrap .event-row .event-col {
   width: 50%;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #fh5co-counter {
@@ -574,7 +583,7 @@ figure {
 .timeline>li>.timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #a4a4a4;
   padding: 30px;
   position: relative;
   -webkit-border-radius: 4px;
@@ -898,6 +907,7 @@ figure {
 }
 
 .fh5co-contact-info ul li {
+  font-size: 1.3em;
   padding: 0 0 0 10px;
   margin: 0 0 15px 0;
   list-style: none;
@@ -905,7 +915,8 @@ figure {
 }
 
 .fh5co-contact-info ul li:before {
-  color: #F14E95;
+  /*color: #F14E95;*/
+
   position: relative;
   right: 1em;
   top: .05em;
@@ -1021,6 +1032,7 @@ form label {
 }
 
 #fh5co-header .display-tc .btn,
+#fh5co-event .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
@@ -1032,12 +1044,13 @@ form label {
 }
 
 #fh5co-header .display-tc .btn:hover,
+#fh5co-event .display-tc .btn:hover,
 #fh5co-counter .display-tc .btn:hover,
 .fh5co-cover .display-tc .btn:hover {
   background: #fff !important;
-  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
-  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
-  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: 0px 14px 30px -15px rgba(255, 255, 255, 0.75) !important;
+  -moz-box-shadow: 0px 14px 30px -15px rgba(255, 255, 255, 0.75) !important;
+  box-shadow: 0px 14px 30px -15px rgba(255, 255, 255, 0.75) !important;
 }
 
 #fh5co-counter {
