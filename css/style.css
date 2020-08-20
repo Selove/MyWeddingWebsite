@@ -12,7 +12,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Alegreya", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -118,7 +118,7 @@ figure {
   margin: 0;
   padding: 0;
   /*line-height: 40px;*/
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Alegreya", Arial, serif;
 }
 
 .fh5co-nav #fh5co-logo img {
@@ -1881,13 +1881,13 @@ form label {
 }
 
 .fh5co-nav-toggle.fh5co-nav-white>i {
-  color: #fff;
-  background: #fff;
+  color: #FFD700;
+  background: #FFD700;
 }
 
 .fh5co-nav-toggle.fh5co-nav-white>i::before,
 .fh5co-nav-toggle.fh5co-nav-white>i::after {
-  background: #fff;
+  background: #FFD700;
 }
 
 .fh5co-nav-toggle i::before {
@@ -1929,7 +1929,7 @@ form label {
 }
 
 .fh5co-nav-toggle {
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 10px;
   z-index: 21;
@@ -1952,7 +1952,7 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Alegreya", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
